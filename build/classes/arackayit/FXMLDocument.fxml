@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="384.0" prefWidth="440.0" style="-fx-background-color: #730700; -fx-border-color: #F39400;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arackayit.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="152.0" layoutY="305.0" onAction="#aracKayitGoster" prefHeight="65.0" prefWidth="136.0" style="-fx-background-color: #FF9B00;" text="Araç Kayıt" />
+      <Label layoutX="105.0" layoutY="14.0" text="Yakıt Takip Sistemi" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="59.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="241.0" fitWidth="437.0" layoutX="14.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Akaryakıt.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="button1" layoutX="293.0" layoutY="305.0" onAction="#yakitAlimGoster" prefHeight="65.0" prefWidth="136.0" style="-fx-background-color: #FF9B00;" text="Yakıt Alım Yönetimi" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="711.0" style="-fx-background-color: #730700; -fx-border-color: #F39400;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arackayit.AracKayitController">
+    <children>
+        <Label layoutX="7.0" layoutY="45.0" text="Plaka:" textFill="WHITE" />
+        <Label layoutX="17.0" text="Araç Kayıt" textFill="WHITE">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <TextField id="Plaka" fx:id="Plaka" layoutX="7.0" layoutY="67.0" prefHeight="31.0" prefWidth="163.0" style="-fx-border-color: #F39400;" />
+        <Label layoutX="7.0" layoutY="98.0" text="Litre:" textFill="WHITE" />
+        <TextField id="YakitTipi" fx:id="YakitTipi" layoutX="7.0" layoutY="122.0" prefHeight="31.0" prefWidth="163.0" style="-fx-border-color: #F39400;" />
+        <Label layoutX="9.0" layoutY="153.0" text="Fiyat:" textFill="WHITE" />
+        <TextField id="AracTipi" fx:id="AracTipi" layoutX="7.0" layoutY="174.0" prefHeight="31.0" prefWidth="163.0" style="-fx-border-color: #F39400;" />
+        <Label layoutX="10.0" layoutY="205.0" text="Adres:" textFill="WHITE" />
+        <TextField id="Kullanici" fx:id="Kullanici" layoutX="7.0" layoutY="227.0" prefHeight="31.0" prefWidth="163.0" style="-fx-border-color: #F39400;" />
+        <Label layoutX="8.0" layoutY="258.0" text="Tarih:" textFill="WHITE" />
+        <DatePicker id="KayitTarihi" fx:id="KayitTarihi" layoutX="7.0" layoutY="279.0" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: #F39400;" />
+        <Button layoutX="7.0" layoutY="321.0" mnemonicParsing="false" onAction="#aracKaydet" prefHeight="65.0" prefWidth="163.0" text="Kaydet" />
+        <TableView fx:id="tableView" layoutX="177.0" layoutY="67.0" prefHeight="320.0" prefWidth="526.0" style="-fx-border-color: #FF9B00; -fx-background-color: #FF9B00;">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Plaka">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Plaka" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="Litre">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="YakitTipi" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="Fiyat">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="AracTipi" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="Adres">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Kullanici" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="90.0" text="Tarih">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="KayitTarihi" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
